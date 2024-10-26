@@ -1,0 +1,8 @@
+@media screen and (max-width: 610px) {
+  .container header nav .navigation{
+    display: none;
+  }
+  .container header nav .burger-menu{
+    display: flex;
+  }
+}

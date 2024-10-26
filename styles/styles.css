@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  transition: all 0.2s linear;
+}
+
+.container header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: darkslategrey;
+}
+
+.container header nav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.container header nav .logo {
+  width: 50%;
+  height: 100%;
+
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  padding-left: 3%;
+  color: #fff;
+}
+
+.container header nav .navigation {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-right: 3%;
+}
+
+.container header nav .navigation .nav-link a {
+  color: #dfdfff;
+}
+
+.container header nav .navigation .nav-link {
+  transition: all 0.2s linear;
+}
+
+.container header nav .navigation .nav-link:hover {
+  transform: scale(1.2);
+}
+
+.container header nav .burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.container header nav .burger-menu .line{
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  left: -30px;
+  transition: all .2s linear;
+}
+
+/* .container header nav .burger-menu .lineOne{
+  transform: rotate(30deg);
+} */
+
+.container header .head {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container header .head .left,
+.container header .head .right {
+  width: 50%;
+  height: 100%;
+}
+
+.container header .head .left {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+
+  padding-left: 10%;
+}
+
+.container header .head .left .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  top: 1%;
+
+  gap: 30px;
+}
+
+.container header .head .left .buttons a {
+  width: 250px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  background-color: #000;
+
+  transition: all 0.2s linear;
+}
+
+.container header .head .left .buttons a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.container header .head .left .buttons .contact-link {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s linear;
+}
+
+.container header .head .left .buttons .contact-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.container header .head .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container header .head .right .card {
+  width: 500px;
+  height: 500px;
+
+  background-color: aquamarine; 
+  border-radius: 20px;
+
+  position: absolute;
+}
+
+.container header .head .right .cardTwo{
+  background-color: darkturquoise;
+  position: relative;
+  top: 3%;
+  left: 3%;
+}
+
+.container header .head .right .cardOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container header .head .right .cardOne img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.container header .head .right .cardOne span{
+  color: #fff;
+  font-size: 30px;
+  z-index: 1;
+  position: relative;
+  top: 5%;
+}
+
+.container header .head .right .cardOne a{
+  z-index: 1;
+  position: relative;
+  width: 250px;
+  height: 50px;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  transition: all .2s linear;
+  border-radius: 10px;
+}
+
+.container header .head .right .cardOne a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.bBar{
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: #000;
+  position: absolute;
+}
