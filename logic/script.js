@@ -3,6 +3,7 @@ let burgerMenu = document.querySelector(".burger-menu");
 let lineOne = document.querySelector(".lineOne");
 let lineTwo = document.querySelector(".lineTwo");
 let lineThree = document.querySelector(".lineThree");
+let bBar = document.querySelector(".bBar");
 
 let isPressed = false;
 
@@ -24,15 +25,28 @@ let getSubscribers = () => {
 
 getSubscribers();
 
-burgerMenu.onclick = () => {
-  let current = !isPressed
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-  lineOne.style.transform = "rotate(60deg) translateX(5px)";
-  lineThree.style.transform = "rotate(-30deg) translateX(3px)";
-  lineTwo.style.display = "none";
-
-  if(current === true){
-    let navigation = document.createElement('div');
-    navigation.className = "bBar";
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "flex";
+    menuIcon.style.display = "none";
   }
-};
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
