@@ -38,7 +38,7 @@ function toggleMenu() {
     menuIcon.style.display = "block";
   } else {
     menu.classList.add("showMenu");
-    closeIcon.style.display = "flex";
+    closeIcon.style.display = "none";
     menuIcon.style.display = "none";
   }
 }
