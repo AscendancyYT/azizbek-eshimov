@@ -408,3 +408,162 @@ html{
   color: #00CED1;
   border: 1px solid #00CED1;
 }
+
+
+/* skills */
+#skills {
+  padding: 50px;
+  text-align: center;
+  background-color: #dfdfff;
+}
+
+#skills h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #dfdfff;
+}
+
+.skill-category {
+  width: 30%;
+  height: 700px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #2F4F4F;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-10px);
+}
+
+.skill-category h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  font-size: 1.1em;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #00CED1;
+  border-radius: 5px;
+  width: 0;
+  transition: width 1.5s ease;
+}
+
+
+
+/* contact */
+
+#contact {
+  padding: 50px;
+  text-align: center;
+  background-color: #2F4F4F;
+  color: #f0f0f0;
+  height: 510px;
+}
+
+#contact h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#contact p {
+  margin-bottom: 30px;
+}
+
+.contact-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-method {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.contact-method h2 {
+  color: #5A5AFF;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 10px 0;
+  color: #5A5AFF;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #00c4ff;
+}
+
+.container #contact .contact-method a{
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid ;
+}
+
+/* Contact Form Styling */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5A5AFF;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #00c4ff;
+}

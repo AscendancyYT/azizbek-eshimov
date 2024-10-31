@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/media.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Azizbek Eshimov</title>
 </head>
 <body>
@@ -27,7 +28,6 @@
             <li class="nav-link"><a href="#contact">Contact</a></li>
           </ul>
           <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
             <i class="menuIcon material-icons">menu</i>
             <i class="closeIcon material-icons">close</i>
           </button>
@@ -104,8 +104,79 @@
       </div>
       <h1 style="color: #ccc; margin-top: 20%;">And much much more (ideas)</h1>
     </div>
-     
+    
+    <section id="skills" class="section">
+      <h1 class="sectionBox">My Skills</h1>
+      <div class="skills-container">
+          <!-- Frontend Skills -->
+          <div class="skill-category">
+              <h2>Frontend</h2>
+              <div class="skill">
+                  <p>HTML</p>
+                  <div class="progress-bar"><span style="width: 90%;"></span></div>
+              </div>
+              <div class="skill">
+                  <p>CSS</p>
+                  <div class="progress-bar"><span style="width: 85%;"></span></div>
+              </div>
+              <div class="skill">
+                  <p>JavaScript</p>
+                  <div class="progress-bar"><span style="width: 75%;"></span></div>
+              </div>
+              <div class="skill">
+                <p>Git</p>
+                <div class="progress-bar"><span style="width: 80%;"></span></div>
+              </div>
+              <div class="skill">
+                <p>React</p>
+                <div class="progress-bar"><span style="width: 60%;"></span></div>
+              </div>
+          </div>
+          <!-- Backend Skills -->
+          <div class="skill-category">
+              <h2>Backend</h2>
+              <div class="skill">
+                  <p>Node.js</p>
+                  <div class="progress-bar"><span style="width: 33%;"></span></div>
+              </div>
+              <div class="skill">
+                  <p>Express.js</p>
+                  <div class="progress-bar"><span style="width: 35%;"></span></div>
+              </div>
+              <div class="skill">
+                  <p>MongoDB</p>
+                  <div class="progress-bar"><span style="width: 30%;"></span></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="contact" class="section">
+    <h1 class="sectionBox">Contact Me</h1>
+    <p>Feel free to reach out through my social media accounts or send a direct message below.</p>
+
+    <div class="contact-options">
+        <!-- Social Media Contact Links -->
+        <div class="contact-method">
+            <h2>Social Media</h2>
+            <p>Connect with me on:</p>
+            <a href="https://t.me/YourTelegramUsername" target="_blank" class="contact-link"><i class='bx bxl-telegram'></i> Telegram</a>
+            <a href="https://www.youtube.com/YourYouTubeChannel" target="_blank" class="contact-link"><i class='bx bxl-youtube'></i>  YouTube</a>
+        </div>
+
+        <!-- Direct Message Form -->
+        <div class="contact-method">
+            <h2>Send a Message</h2>
+            <form action="your-server-endpoint" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+  </section>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="logic/script.js"></script>
 </body>
 </html>

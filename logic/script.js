@@ -27,8 +27,8 @@ getSubscribers();
 
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
@@ -45,19 +45,40 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
+});
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-      });
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   });
+});
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const CHAT_ID = "-1002300090325";
+  const BOT_TOKEN = "8199115147:AAH0X_JanAI2isJNXDoY7xQlQBWMnpaQbW4";
+  const URI_API = `https://api.telegram.org/bot${BOT_TOKEN}/SendMessage`;
+
+  let message = "<b>Сообшение с сайта</b> \n";
+  message += `<b>Отправитель:</b> ${this.name.value} \n`;
+  message += `<b>Контактные данные:</b> ${this.email.value} \n`;
+  message += `<b>Сообшение:</b> ${this.message.value} \n`;
+
+  axios.post(URI_API, {
+    parse_mode: "html",
+    text: message,
+    chat_id: CHAT_ID,
+  });
+
+  this.name.value = " ";
+  this.email.value = " ";
+  this.message.value = " ";
 });
