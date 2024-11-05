@@ -1,11 +1,63 @@
-@media screen and (max-width: 610px) {
-  .container header nav .navigation{
+/* General Responsive Adjustments */
+@media screen and (max-width: 1255px), screen and (max-height: 900px) {
+  .container .about .content .right {
     display: none;
   }
-  .container header nav .burger-menu{
+  .container .about .content .left {
+    width: 100%;
+  }
+  .container .about .content .left .leftText {
+    font-size: smaller;
+    width: 100%;
+    text-align: justify;
+  }
+  .container .about {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1210px), screen and (max-height: 850px) {
+  .container header .head .right {
+    display: none;
+  }
+  .container header .head .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1180px), screen and (max-height: 800px) {
+  .container .skills {
+    max-height: 1000px;
+  }
+  .container .skills .skill-category {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 780px), screen and (max-height: 700px) {
+  .container .skills .skill-category {
+    width: 70% !important;
+  }
+}
+
+/* Smaller Devices (Phones) */
+@media screen and (max-width: 640px), screen and (max-height: 650px) {
+  .container .about .content .left .leftText {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 610px), screen and (max-height: 600px) {
+  .container header nav .navigation {
+    display: none;
+  }
+  .container header nav .burger-menu {
     display: flex;
   }
-  .container header .left{
+  .container header .left {
     width: 100%;
     display: flex;
     align-items: center;
@@ -13,81 +65,111 @@
     position: relative;
     left: -3%;
   }
-  .container header .left .description{
+  .container header .left .description {
     width: 500px;
+  }
+  .container header .head h2 {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .container header .head h1{
+@media screen and (max-width: 576px), screen and (max-height: 580px) {
+  .container header .head h1 {
     width: 300px;
   }
   .container header .head .buttons {
     position: relative;
     left: -1%;
   }
-  .container header .head .buttons a{
+  .container header .head .buttons a {
     width: 200px !important;
     height: 10px;
   }
+  .container header .head .box {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 530px), screen and (max-height: 550px) {
   .container .description {
     width: 430px !important;
   }
 }
 
-@media screen and (max-width: 465px){
-  .container header .head .buttons a{
+@media screen and (max-width: 465px), screen and (max-height: 500px) {
+  .container header .head .buttons a {
     width: 170px !important;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .container header .head .buttons a{
+@media screen and (max-width: 430px), screen and (max-height: 450px) {
+  .container .about .content .left .leftText {
+    display: none;
+  }
+  .container .responsiveText {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px), screen and (max-height: 420px) {
+  .container header .head .buttons a {
     width: 150px !important;
   }
-  .container header .head .left .description{
+  .container header .left .description {
     font-size: 22px !important;
   }
 }
 
-@media screen and (max-width: 388px) {
-  .container header nav .logo{
+@media screen and (max-width: 388px), screen and (max-height: 400px) {
+  .container header nav .logo {
     width: 70%;
   }
 }
 
-@media screen and (max-width: 355px) {
-  .container header .head .left{
+@media screen and (max-width: 375px), screen and (max-height: 380px) {
+  .container #projects {
+    height: 120%;
+  }
+}
+
+@media screen and (max-width: 355px), screen and (max-height: 360px) {
+  .container header .head .left {
     left: -30%;
   }
-  .container header nav .hamburger{
+  .container header nav .hamburger {
     position: relative;
     top: 20%;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .container header .head .left .buttons a{
+@media screen and (max-width: 350px), screen and (max-height: 340px) {
+  .container header .head {
+    width: 100% !important;
+    position: relative;
+  }
+  .container header .head .left {
+    width: 100% !important;
+    left: -13px;
+  }
+  .container header .head .left h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px), screen and (max-height: 320px) {
+  .container header .head .left .buttons a {
     width: 125px !important;
   }
-  .container header .head .left .description{
+  .container header .head .left .description {
     font-size: larger !important;
     text-align: left !important;
     width: 300px !important;
   }
 }
 
-@media screen and (max-width: 1210px) {
-  .container header .head .right{
-    display: none;
-  }
-  .container header .head .left{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 285px), screen and (max-height: 300px) {
+  .container .projects {
+    height: 130%;
   }
 }

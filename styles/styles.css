@@ -265,7 +265,6 @@ html{
   color: #fff;
 }
 
-
 /* about */
 
 
@@ -486,7 +485,7 @@ html{
   text-align: center;
   background-color: #2F4F4F;
   color: #f0f0f0;
-  height: 510px;
+  max-height: 1300px;
 }
 
 #contact h1 {
@@ -566,4 +565,8 @@ form button {
 
 form button:hover {
   background-color: #00c4ff;
+}
+
+.responsiveText{
+  display: none;
 }
