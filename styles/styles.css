@@ -41,6 +41,7 @@ html{
   justify-content: center;
   flex-direction: column;
   background-color: darkslategrey;
+  position: relative;
 }
 
 .container header nav {
@@ -219,22 +220,6 @@ html{
 .container header .head .right .cardOne a:hover{
   background-color: #fff;
   color: #000;
-}
-
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
-.burger-menu {
-  display: none;
-  z-index: 9901;
 }
 
 .menu {
