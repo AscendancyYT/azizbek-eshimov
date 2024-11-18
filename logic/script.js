@@ -25,12 +25,6 @@ let getSubscribers = () => {
 
 getSubscribers();
 
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger = document.querySelector(".hamburger");
-const closeIcon = document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-const navLink = document.querySelector(".nav-link");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -43,11 +37,7 @@ function toggleMenu() {
   }
 }
 
-hamburger.addEventListener("click", toggleMenu);
 
-menuItems.forEach(function (menuItem) {
-  menuItem.addEventListener("click", toggleMenu);
-});
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
